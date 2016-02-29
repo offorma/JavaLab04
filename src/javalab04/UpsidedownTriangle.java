@@ -18,11 +18,15 @@ public class UpsidedownTriangle {
         System.out.println("Enter a number");
         int x = input.nextInt();
         for (int i=x; i >= 1; i--){
-            System.out.print(" "+" "+" ");
+            
+             for (int k =((x-i)-1); k >=0; k--){
+                    System.out.print(" ");
+                    }
+             
             for (int j= i*2; j >=1; j--){
-                    System.out.print("*");
-            }
-            System.out.print("\n"+" ");
+                        System.out.print("*");
+                }
+            System.out.print("\n"); 
         }
     }
 }
